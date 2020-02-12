@@ -29,9 +29,33 @@
                   background-color: silver;
                 }
                 </style>
+          <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+  <style>
+  .w3-allerta {
+    font-family: "Allerta Stencil", Sans-serif;
+  }
+  </style>
   </head>
   <body>
+    <div class="w3-container w3-black w3-center w3-allerta">
+        <h1 id="Titulo" class=" w3-xxxlarge text-center mt-5 display-4 text-primary" style="text-shadow:4px 4px 0 #444">Random Phrases</h1>
+      </div>
     <h1 class="text-center mt-5 display4 text-primary">Frases de Canciones:</h1>
+
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Artistas:
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Billie Eilish</a>
+          <a class="dropdown-item" href="#">Drake</a>
+          <a class="dropdown-item" href="#">Other</a>
+        </div>
+      </div>
+
     <script language="JavaScript" class="text-center mt-5 display4 text-primary" >
         fraseAleatoria();
         </script>
