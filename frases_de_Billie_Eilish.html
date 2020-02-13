@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Random Phrases </title>
+    <script language="JavaScript">
+        var Frase=new Array() 
+        Frase[0] = "In the public eye, girls and women with strong perspectives are hated. If you're a girl with an opinion, people just hate you. There are still people who are afraid of successful women, and that's so lame. (Billie Eilish)";
+        Frase[1] = "I feel like I write so that people can think of it as theirs. If my song is exactly about your life right now, then it is. I don't even want to say that it's mine, because it's yours. (Billie Eilish)";
+        Frase[2] = "I'm not going to say I'm cool, because I don't really feel that. I just don't care at all, and I guess that's what people think is cool. (Billie Eilish)";
+        Frase[3] = "Sometimes it's flattering when people copy you, but sometimes it gets to a breaking point. (Billie Eilish)";
+        Frase[4] = "There are alway going to be bad things. But you can write it down and make a song out of it. (Billie Eilish)";
+        Frase[5] = "I've always done whatever I want and always been exactly who I am. (Billie Eilish).";
+        Frase[6] = "If I'm in a bad mood, or if I'm uncomfortable, it's probably what I'm wearing that's making me feel that way. (Billie Eilish).";
+        Frase[7] = "There are alway going to be bad things. But you can write it down and make a song out of it. (Billie Eilish).";
+        Frase[8] = "I've always done whatever I want and always been exactly who I am. (Billie Eilish).";
+        Frase[9] = "Smiling makes me feel weak and not in control and not powerful and small. (Billie Eilish).";
+        Frase[10] = "Clothing & fashion are kind of my security blanket, almost. (Billie Eilish).";
+
+         
+        var F = Frase.length;
+        var aleatorio=Math.round(Math.random()*(F-1));
+        function fraseAleatoria(){
+                document.write(Frase[aleatorio]);
+        }
+        </script>
+            <style>
+                body {
+                  background-color: silver;
+                }
+                </style>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <style>
+    .w3-allerta {
+      font-family: "Allerta Stencil", Sans-serif;
+    }
+    </style>
+    <link rel="icon" href="../randomphrases.github.io/icono1.ico">
+  </head>
+  <body>
+    <div class="w3-container w3-black w3-center w3-allerta">
+        <a href="../randomphrases.github.io/index.html" ><img src="https://i.ibb.co/pbfrssg/icono.png" alt="icono" border="0"></a>
+        <h1 id="Titulo" class=" w3-xxxlarge text-center mt-5 display-4 text-primary" style="text-shadow:4px 4px 0 #444">Random Phrases</h1>
+      </div>
+    <h1 class="text-center mt-5 display4 text-primary">Frases de Billie Eilish:</h1>
+    <script language="JavaScript" class="text-center mt-5 display4 text-primary" >
+        fraseAleatoria();
+        </script>
+        <a id="Generador" href="javascript:location.reload()" class="btn btn-primary">Nueva Frase</a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
