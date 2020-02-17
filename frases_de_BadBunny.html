@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Random Phrases </title>
+    <script language="JavaScript">
+        var Frase=new Array() 
+        Frase[0] = "La luna cae y yo te extraño más que ayer. Dime si vas a volver que yo te quiero tener. – Dime si vas a volver. (Bad Bunny) ";
+        Frase[1] = "Ya me acostumbré a callarle la boca al que no me cree. – Me acostumbré. (Bad Bunny).";
+        Frase[2] = "En las buenas todo el mundo, en las malas el desierto. – Me importa un carajo. (Bad Bunny)";
+        Frase[3] = "Recuerda que la vida te da sorpresas, ya la corona no está en tu cabeza, el conejo el que caza el león es la presa. – La T-shirt de Biggie. (Bad Bunny)";
+        Frase[4] = "Yo sé que sigues siendo mía, que me amas todavía, que volverás un día y yo quiero que sea hoy. – Dime si vas a volver. (Bad Bunny)";
+        Frase[5] = "Hagas lo que hagas tú no me vas a olvidar, esté sola y bellaca, tú me vas a pensar. – No te hagas. (Bad Bunny)";
+        Frase[6] = "Me dicen que tenga cuidado con lo que yo escriba, cuando muera no sé si voy para abajo o para arriba. – Me importa un carajo. (Bad Bunny)";
+        Frase[7] = "Tú quieres un viejo, ¿estás segura? Yo te prometo un millón de aventuras y en la cama te duro lo que él no dura. – Mayores. (Bad Bunny)";
+        Frase[8] = "Quisiera que te sientas como yo me siento. Quiera ser como tú, sin sentimientos. Quisiera sacarte de mis pensamientos. Quisiera cambiarle el final al cuento. – Amorfoda. (Bad Bunny)";
+        Frase[9] = "No entiendo por qué sólo somos panas, si nos sobran las ganas de hacer más de ocho poses en la cama. – Amantes de una noche. (Bad Bunny)";
+        Frase[10] = "Baby, obvio no eres la primera, pero eres la verdadera. Con la que mezclo amor y bellaquera, con la que gasto lo que se genera. – Pa’ ti. (Bad Bunny)";
+        Frase[11] = "Anoche me acosté con otra, desperté en otra cama sin ropa. Sexo y drogas, una noche loca, tu sexto sentido no se equivoca. – Sexto Sentido. (Bad Bunny)";
+        Frase[12] = "Pasa el tiempo y todavía no me igualan el tiro. En el dinero es lo único en que me inspiro. No miro a nadie por encima del hombro. Yo ni los miro. – Mood (Freestyle) (Bad Bunny).";
+        Frase[13] = "Todos te quieren probar, lo que no saben es que no te dejas llevar de cualquiera, y todos te quieren probar, lo que no saben es que hoy yo te voy a buscar. – Mía. (Bad Bunny).";
+        Frase[14] = "Sigue tu camino que sin ti me va mejor. Ahora tengo a otras que me lo hacen mejor. Si antes yo era un hijo de puta ahora soy peor. Ahora soy peor por ti. – Soy peor. (Bad Bunny).";
+        Frase[15] = "No me afilio con la calle, pero tengo el beneficio de mandarlos a matar y no tener que ir a juicio. – Mood (Freestyle) (Bad Bunny).";
+        Frase[16] = "Baja por la cuesta, que ando con la orquesta, cabrones la cesta, yo nunca estoy abajo en las apuestas. – Tú no vive así (Bad Bunny).";
+        Frase[17] = "Si te quieres ir yo lo voy a entender, tienes mil razones para no volver. Me da miedo no volverte a ver, pero es lo que merezco por infiel. – Sexto sentido. (Bad Bunny).";
+        Frase[18] = "En mis sueños yo siento tu cuerpo, mi único enemigo es el tiempo. Tú cierras los ojos y piensa en mi nombre, pero te das cuenta que ahora hay otro hombre. – Vuelve. (Bad Bunny).";
+        Frase[19] = "Por ti ahora hago todo lo que quiero. Sólo pienso en mí primero. Tirando billetes adentro del putero. Pal carajo el amor verdadero, yo sólo pienso en hacer dinero. – Soy peor. (Bad Bunny).";
+        Frase[20] = "Y el árbol se planta, la flor vuelve y crece, somos la estrella que alumbra, aunque estemos sin luz seis meses. – Mi Puerto Rico. (Bad Bunny).";
+        Frase[21] = "Te juro que me sentí sucio cuando a otra yo toqué. Yo no sé ni por qué. Ella fue la que vino donde mí, yo no la provoqué. – Sexto Sentido. (Bad Bunny).";
+        Frase[22] = "Yo no estoy para amores de meses. No estoy pa’ peleas ni estupideces. Búscate a otro pa’ que te bese, ninguno de esos cabrones a mí se parece. – Soy peor (Bad Bunny).";
+        Frase[22] = "No quiero que más nadie me hable de amor. Ya me cansé, todos esos trucos ya me los sé. – Amorfoda (Bad Bunny).";
+        Frase[23] = "Yo no sé si tú mañana me vas a querer o si después de hoy te vas a perder. – Sensualidad (Bad Bunny).";
+        Frase[24] = "Me escriben y las dejo en visto, por ti tentaciones resisto. – Pa’ ti (Bad Bunny).";
+        Frase[25] = "Tú odias mi vida pero es porque quieres tenerla. (Bad Bunny).";
+        Frase[26] = "Tengo miedo de morirme y volver a nacer, y que tú no estés ahí. – Vuelve (Bad Bunny).";
+        Frase[27] = "Ser un infiel ya de nada vale, por mujeres como tú es que dicen que todos los hombres somos iguales. Si no me conoces, no me señales. Ya yo me conozco tus males. – Soy peor (Bad Bunny).";
+        Frase[28] = "Te juro que yo soy fiel, mi pasado ya es cosa de ayer. No todo el tiempo va a ser luna de miel, pero todo lo que te compro es Gucci o Chanel. – Pa’ ti (Bad Bunny).";
+        Frase[29] = "Si no quieres estar conmigo a tiempo completo, tú me dices y yo te lo respeto. Me llama cuando quiera y te lo meto. – La última vez (Bad Bunny).";
+     
+
+         
+        var F = Frase.length;
+        var aleatorio=Math.round(Math.random()*(F-1));
+        function fraseAleatoria(){
+                document.write(Frase[aleatorio]);
+        }
+        </script>
+            <style>
+                body {
+                  background-color: silver;
+                }
+                </style>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <style>
+    .w3-allerta {
+      font-family: "Allerta Stencil", Sans-serif;
+    }
+    </style>
+    <link rel="icon" href="../randomphrases.github.io/icono1.ico">
+  </head>
+  <body>
+    <div class="w3-container w3-black w3-center w3-allerta">
+        <a href="../randomphrases.github.io/index.html" ><img src="https://i.ibb.co/pbfrssg/icono.png" alt="icono" border="0"></a>
+        <h1 id="Titulo" class=" w3-xxxlarge text-center mt-5 display-4 text-primary" style="text-shadow:4px 4px 0 #444">Random Phrases</h1>
+      </div>
+    <h1 class="text-center mt-5 display4 text-primary">Frases de Bad Bunny:</h1>
+    <script language="JavaScript" class="text-center mt-5 display4 text-primary" >
+        fraseAleatoria();
+        </script>
+        <a id="Generador" href="javascript:location.reload()" class="btn btn-primary">Nueva Frase</a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
