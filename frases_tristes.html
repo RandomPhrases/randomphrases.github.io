@@ -1,71 +1,190 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   
-    <title>Random Phrases </title>
-    <script language="JavaScript">
-        var Frase=new Array() 
-        Frase[0] = "Quisimos ser tanto que se nos olvidó ser algo.";
-        Frase[1] = "Para cuando la herida sana, uno ya no es el mismo.";
-        Frase[2] = "La tristeza es una de las vibraciones que prueban que estamos vivos.";
-        Frase[3] = "La vida es placentera. La muerte es pacífica. Es la transición que es problemática.";
-        Frase[4] = "Our culture has a strange relationship with sadness.";
-        Frase[5] = "“Sadness is but a wall between two gardens.” – Kahlil Gibran";
-         
-        var F = Frase.length;
-        var aleatorio=Math.round(Math.random()*(F-1));
-        function fraseAleatoria(){
-                document.write(Frase[aleatorio]);
-        }
-        </script>
-        <style>
-            body {
-              background-color: silver;
-            }
-            </style>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-        <style>
-        .w3-allerta {
-          font-family: "Allerta Stencil", Sans-serif;
-        }
-        </style>
-        <link rel="icon" href="../randomphrases.github.io/icono1.ico">
-        <style>
-          #img {position:absolute; bottom:65px}
-          #img {position:absolute; right:10%}
-          </style>
-          
-          <img id="img" src="icono.png" alt="" width="100" height="100" />
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="es">
     
-      <div class="w3-container w3-black w3-center w3-allerta">
-        <a href="../randomphrases.github.io/index.html" ><img src="https://i.ibb.co/pbfrssg/icono.png" alt="icono" border="0"></a>
-        <h1 id="Titulo"  class=" w3-xxxlarge text-center mt-5 display-4 text-primary" style="text-shadow:4px 4px 0 #444">Random Phrases</h1>
-      </div>
-      <h1 class="text-center mt-5 display4 ">Frases Tristes:</h1>
-      
-      <center>  <p  style="font-size:30px;color: dodgerblue;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" ><script language="JavaScript" class="text-center mt-5 display4 text-primary" >
-        fraseAleatoria();
-        </script></p>
-        <a id="Generador" href="javascript:location.reload()" witdh="500000" class="btn btn-primary">Nueva Frase</a></center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Phrases</title>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+body {background-color: black; 
+
+margin-bottom: 1110px;
+
+}
+h1 {  
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+h1 :hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+h2 {      
+    margin-top: 0px;
+    margin-left: 300px;
+    margin-right: 900px;
+    padding: 20px  ;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+
+div {
+
+margin-top: 0px;
+margin-left: 650px;
+margin-right: 900px;
+padding: 0px  ;
+background-color:rgb(255, 255, 255);
+border:10px solid;
+
+
+
+
+
+}
+
+p {
+
+    padding: 40px;
+    padding-right: 300px;
+    padding-bottom: 40px;
+    padding-top: 1;
+    padding-left: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+p{
+    background: #1cabd6;
+    color: #050801;
+    box-shadow: 0 0 5px #1cabd6,
+                0 0 25px #1cabd6,
+                0 0 50px #1cabd6,
+                0 0 200px #1cabd6;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.333));
+
+
+
+}
+
+
+
+
+
+
+
+</style>
+
+<script language="JavaScript">
+    var Frase=new Array() 
+    Frase[0] = "Quisimos ser tanto que se nos olvidó ser algo.";
+    Frase[1] = "Para cuando la herida sana, uno ya no es el mismo.";
+    Frase[2] = "La tristeza es una de las vibraciones que prueban que estamos vivos.";
+    Frase[3] = "La vida es placentera. La muerte es pacífica.\n Es la transición que es problemática.";
+    Frase[4] = "Our culture has a strange relationship with sadness.";
+    Frase[5] = "“Sadness is but a wall between two gardens.” – Kahlil Gibran";
+     
+    var F = Frase.length;
+    var aleatorio=Math.round(Math.random()*(F-1));
+    function fraseAleatoria(){
+            document.write(Frase[aleatorio]);
+    }
+    </script>
+
+
+
+</head>
+<body>
+    <h1 href=".../ prueba/index.html" style="color: rgb(255, 255, 255);" >Random Phrases</h1>
+
+
+
+    <!--  Posible estilo para cuadro de frase  -->
   
-  
-  
-  
-  </body>
-</html>
+        <center>  <p  style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >
+        <script language="JavaScript"  >
+            fraseAleatoria();
+            </script></p>
+            <div class="grid-reload"  >
+            <a style="border:2px solid" id="Generador" href="javascript:location.reload()" witdh="500000" class="btn btn-secondary">Nueva Frase</a></center>
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 
