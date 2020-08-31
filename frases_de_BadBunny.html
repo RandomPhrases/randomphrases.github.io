@@ -1,17 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="MobileOptimized" content="width" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 
-    <title>Random Phrases </title>
-    <script language="JavaScript">
-        var Frase=new Array() 
-        Frase[0] = "La luna cae y yo te extraño más que ayer. Dime si vas a volver que yo te quiero tener. – Dime si vas a volver. (Bad Bunny) ";
+
+    <title>Random Phrases</title>
+
+
+<script language="JavaScript">
+    var Frase=new Array() 
+    Frase[0] = "La luna cae y yo te extraño más que ayer. Dime si vas a volver que yo te quiero tener. – Dime si vas a volver. (Bad Bunny) ";
         Frase[1] = "Ya me acostumbré a callarle la boca al que no me cree. – Me acostumbré. (Bad Bunny).";
         Frase[2] = "En las buenas todo el mundo, en las malas el desierto. – Me importa un carajo. (Bad Bunny)";
         Frase[3] = "Recuerda que la vida te da sorpresas, ya la corona no está en tu cabeza, el conejo el que caza el león es la presa. – La T-shirt de Biggie. (Bad Bunny)";
@@ -43,45 +46,45 @@
         Frase[28] = "Te juro que yo soy fiel, mi pasado ya es cosa de ayer. No todo el tiempo va a ser luna de miel, pero todo lo que te compro es Gucci o Chanel. – Pa’ ti (Bad Bunny).";
         Frase[29] = "Si no quieres estar conmigo a tiempo completo, tú me dices y yo te lo respeto. Me llama cuando quiera y te lo meto. – La última vez (Bad Bunny).";
      
-
-         
-        var F = Frase.length;
-        var aleatorio=Math.round(Math.random()*(F-1));
-        function fraseAleatoria(){
-                document.write(Frase[aleatorio]);
-        }
-        </script>
-            <style>
-                body {
-                  background-color: silver;
-                }
-                </style>
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-    <style>
-    .w3-allerta {
-      font-family: "Allerta Stencil", Sans-serif;
+    var F = Frase.length;
+    var aleatorio=Math.round(Math.random()*(F-1));
+    function fraseAleatoria(){
+            document.write(Frase[aleatorio]);
     }
-    </style>
-    <link rel="icon" href="../randomphrases.github.io/icono1.ico">
-  </head>
-  <body>
-    <div class="w3-container w3-black w3-center w3-allerta">
-        <a href="../randomphrases.github.io/index.html" ><img src="https://i.ibb.co/pbfrssg/icono.png" alt="icono" border="0"></a>
-        <h1 id="Titulo" class=" w3-xxxlarge text-center mt-5 display-4 text-primary" style="text-shadow:4px 4px 0 #444">Random Phrases</h1>
-      </div>
-    <h1  class="text-center mt-5 display4  ">Frases de Bad Bunny:</h1>
- 
-    <center>  <p  style="font-size:30px;color: dodgerblue;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" ><script language="JavaScript" class="text-center mt-5 display4 text-primary" >
-          fraseAleatoria();
-          </script></p>
-          <a id="Generador" href="javascript:location.reload()" witdh="500000" class="btn btn-primary">Nueva Frase</a></center>
+    </script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+
+</head>
+<body>
+        <h1 class=title   >Random Phrases</h1>
+
+
+
+  <center>  <h2 class="titulodos" >FRASES DE BAD BUNNY</h2></center>
+
+
+
+    <!--  Posible estilo para cuadro de frase  -->
+  
+        <center>  <p class="frase"  >
+        <script language="JavaScript"  >
+            fraseAleatoria();
+            </script></p>
+            <div class="a"  >
+            <a  id="Generador" href="javascript:location.reload()" >Nueva Frase</a></center>
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 
